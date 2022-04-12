@@ -1,8 +1,11 @@
+// import styles from "./css/styles.css";
+
 // ❗️ DON'T TOUCH THESE 2 FUNCTIONs
 // Pre-made function that will fill the button with its number.
 // First button top left is called 1, last button bottom right is 9
 function fillButton(index, text) {
   // This function fills the button of the send index
+
   document.getElementById(index).innerHTML = text;
 }
 // pre-made a function. You can use this function to present an alert to say someone wins
@@ -82,9 +85,8 @@ function theWinner(player) {
 
 function resetGame() {
   count = 0;
-
   grid = ["", "", "", "", "", "", "", "", ""];
-  for (let i = 0; i < 9; i++) {
+  for (let i = 1; i < 10; i++) {
     fillButton(i, "");
   }
 }
@@ -98,3 +100,4 @@ function draw() {
  */
 // function checkWinner
 // function restartGame
+// export default styles;
